@@ -1,0 +1,48 @@
+/* utility */
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-end {
+  grid-column: 1/-1;
+}
+
+/* grid */
+.main-grid {
+  max-width: var(--grid-width);
+  display: grid;
+  grid-template-columns: 100px 40px 1fr 40px;
+  grid-auto-rows: 32px;
+  grid-column-gap: 26px;
+  grid-row-gap: 28px;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.main-grid .numbers {
+  font-size: 1.4rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title::first-letter {
+  color: var(--main-blue-color);
+}
+
+.svg {
+  width: 40px;
+  margin: -8px 0;
+}
+
+.img-male {
+  margin-left: 4px;
+}
+.img-female {
+  margin-left: 24px;
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* variables */
+:root {
+  --grid-width: 550px;
+  --dark-bg-color: #222;
+  --text-color: #fff;
+  --footer-bg-color: #fff;
+  --main-blue-color: #0fd0fd;
+  --grey-gradient-bg: rgb(80, 80, 80);
+  --grey-gradient-bg: linear-gradient(
+    180deg,
+    rgba(72, 72, 72, 1) 0%,
+    rgba(56, 56, 56, 1) 100%
+  );
+}
+
+/* css reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+/* main style */
+body {
+  background: var(--dark-bg-color);
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* if content height is less then screen height, fill entire screen */
+.min-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* utiliy classes */
+.flex {
+  flex: 1;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.small {
+  font-size: 1rem;
+}

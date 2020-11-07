@@ -1,0 +1,32 @@
+.display-wrapper {
+  margin-top: 64px;
+}
+
+.display {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.display-panel {
+  background: var(--grey-gradient-bg);
+  padding: 12px 24px;
+  display: flex;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.display .num {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.display .text {
+  margin-left: 16px;
+}
+
+.display .sub-text {
+  letter-spacing: 0.4px;
+  margin-top: 4px;
+  margin-left: 24px;
+  color: #ddd;
+}
