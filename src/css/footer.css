@@ -40,3 +40,19 @@ footer .button svg {
 .brand-name {
   height: 64px;
 }
+
+/* 700px */
+
+@media only screen and (max-width: 700px) {
+  footer .flex {
+    flex: 0;
+  }
+  .footer-wrapper {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 250px;
+  }
+  .brand-name {
+    height: 48px;
+  }
+}

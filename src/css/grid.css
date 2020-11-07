@@ -46,3 +46,26 @@
 .img-female {
   margin-left: 24px;
 }
+
+/* grid media */
+@media only screen and (max-width: 850px) {
+  .main-grid {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main-grid {
+    grid-template-columns: 40px 1fr 40px;
+    max-width: 80%;
+  }
+  .title {
+    grid-column: 1 / -1;
+  }
+  .activity {
+    grid-column: span 2;
+  }
+  . {
+    text-align: center;
+  }
+}

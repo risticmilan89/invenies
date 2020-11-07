@@ -33,9 +33,72 @@
   color: var(--main-blue-color);
   justify-content: center;
   opacity: 1;
+  animation-name: blink;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   display: none;
 }
 .scroll-down svg {
   height: 20px;
   margin: 0 32px;
+}
+
+/* blink animation */
+@keyframes blink {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 1050px */
+@media only screen and (max-width: 1050px) {
+  .logo-wrapper {
+    transform: translateX(50%);
+  }
+  .layout {
+    margin-right: 0;
+    width: 95%;
+  }
+  .logo-wrapper h1 {
+    display: none;
+  }
+}
+
+/* 750px */
+@media only screen and (max-width: 850px) {
+  .scroll-down {
+    display: flex;
+  }
+  .logo-wrapper {
+    transform: translateX(0);
+    height: 90vh;
+  }
+  .logo-wrapper h1 {
+    display: block;
+    margin: 64px 16px;
+  }
+  .layout {
+    display: block;
+    width: 100%;
+  }
+  .layout .logo {
+    width: 70%;
+  }
+  .main {
+    padding: 80px 0 0;
+    min-height: 80vh;
+    margin: auto;
+  }
+}
+
+/* 350px */
+@media only screen and (max-width: 350px) {
+  .logo-wrapper h1 {
+    display: block;
+    margin: 16px 16px 40px;
+  }
 }
